@@ -1,0 +1,19 @@
+{
+    "name": "jmalko/afterschool-statamic",
+    "autoload": {
+        "psr-4": {
+            "Jmalko\\AfterschoolStatamic\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Afterschool Statamic",
+            "description": "Afterschool Statamic addon"
+        },
+        "laravel": {
+            "providers": [
+                "Jmalko\\AfterschoolStatamic\\ServiceProvider"
+            ]
+        }
+    }
+}
