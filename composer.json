@@ -1,5 +1,14 @@
 {
     "name": "jmalko/afterschool-statamic",
+    "license": "proprietary",
+    "type": "statamic-addon",
+    "description": "A learning management system for Statamic CMS",
+    "require": {
+        "php": "^8.0",
+        "laravel/framework": "^8.40",
+        "statamic/cms": "^3.3"
+    },
+
     "autoload": {
         "psr-4": {
             "Jmalko\\AfterschoolStatamic\\": "src"
@@ -14,6 +23,11 @@
             "providers": [
                 "Jmalko\\AfterschoolStatamic\\ServiceProvider"
             ]
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "pixelfear/composer-dist-plugin": true
         }
     }
 }
